@@ -1,10 +1,10 @@
 // ==UserScript==
-// @name         New Userscript
+// @name         Azad University Hack
 // @namespace    http://tampermonkey.net/
 // @version      undefined
-// @description  try to take over the world!
-// @author       Alireza Sheikholmolouki
-// @match        *
+// @description  Hacking tools for Azad Students
+// @author       Me
+// @match        http://edu.kiau.ac.ir/Karnameha.aspx
 // @grant        none
 // ==/UserScript==
 
@@ -80,7 +80,37 @@
 "use strict";
 
 
-console.log('ss');
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var $ = function $(query) {
+    return document.querySelector(query);
+};
+var $$ = function $$(query) {
+    return document.querySelectorAll(query);
+};
+
+var Hack = function () {
+    function Hack() {
+        _classCallCheck(this, Hack);
+
+        this.render();
+    }
+
+    _createClass(Hack, [{
+        key: 'render',
+        value: function render() {
+            $('#ctl00_UpdatePanel1 > table > tbody > tr:nth-child(1)').style.display = 'none';
+            $('#ctl00_ContentPlaceHolder1_idrizkarnamehuc2_lnkBtnPrintTop').style.display = 'none';
+            requestAnimationFrame(this.render.bind(this));
+        }
+    }]);
+
+    return Hack;
+}();
+
+window.hack = new Hack();
 
 /***/ })
 /******/ ]);})();

@@ -4,6 +4,7 @@
   "description": "Hacking tools over TamperMonkey for Azad university students in Iran",
   "main": "index.js",
   "scripts": {
+    "dev": "node index.js",
     "test": "npm test"
   },
   "repository": {
