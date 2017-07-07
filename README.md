@@ -1,2 +1,2 @@
 # Azad-University-Hack
-Hack tools over TamperMonkey  for Azad University Students in Iran
+Hacking tools over TamperMonkey for Azad university students in Iran

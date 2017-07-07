@@ -1,0 +1,25 @@
+{
+  "name": "azad-university-hack",
+  "version": "1.0.0",
+  "description": "Hacking tools over TamperMonkey for Azad university students in Iran",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alireza29675/Azad-University-Hack.git"
+  },
+  "keywords": [
+    "azad",
+    "university",
+    "iran",
+    "hack"
+  ],
+  "author": "Alireza Sheikholmolouki",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Alireza29675/Azad-University-Hack/issues"
+  },
+  "homepage": "https://github.com/Alireza29675/Azad-University-Hack#readme"
+}
