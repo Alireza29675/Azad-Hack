@@ -1,4 +1,14 @@
-/******/ (function(modules) { // webpackBootstrap
+// ==UserScript==
+// @name         New Userscript
+// @namespace    http://tampermonkey.net/
+// @version      undefined
+// @description  try to take over the world!
+// @author       Alireza Sheikholmolouki
+// @match        *
+// @grant        none
+// ==/UserScript==
+
+(function() {/******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -73,4 +83,4 @@
 console.log('ss');
 
 /***/ })
-/******/ ]);
+/******/ ]);})();
