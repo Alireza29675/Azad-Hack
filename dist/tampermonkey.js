@@ -95,14 +95,21 @@ var Hack = function () {
     function Hack() {
         _classCallCheck(this, Hack);
 
+        this.selectors = {
+            karnameKol: '#ctl00_UpdatePanel1 > table > tbody > tr:nth-child(1)',
+            printKarname: '#ctl00_ContentPlaceHolder1_idrizkarnamehuc2_lnkBtnPrintTop'
+        };
         this.render();
     }
 
     _createClass(Hack, [{
         key: 'render',
         value: function render() {
-            $('#ctl00_UpdatePanel1 > table > tbody > tr:nth-child(1)').style.display = 'none';
-            $('#ctl00_ContentPlaceHolder1_idrizkarnamehuc2_lnkBtnPrintTop').style.display = 'none';
+            var selectors = this.selectors;
+            // do what to do
+            $(selectors.karnameKol).style.display = 'none';
+            $(selectors.printKarname).style.display = 'none';
+            // Loop
             requestAnimationFrame(this.render.bind(this));
         }
     }]);
