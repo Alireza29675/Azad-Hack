@@ -218,7 +218,7 @@ var Hack = function () {
                     if (rowData.point >= 10) {
                         sumAcceptedUnits += rowData.units + rowData.practicalUnit;
                         sumAffectedUnits = sumAcceptedUnits;
-                        sumScores = rowData.score;
+                        sumScores += rowData.score;
                     }
                     average = sumScores / sumAffectedUnits;
                     $(this.selectors.sumUnits).innerHTML = parseInt(sumUnits);
